@@ -25,7 +25,7 @@
 					"<tr>" .
 					"<td id='one'>" . $rowObj->design_id . "</td>" .
 					// "<td id='two'>" . $rowObj->image_address . "</td></tr>"
-					"<td id='two'><img src='http://localhost/temp1_18aug2017_1" . $rowObj->image_address . "'/></td>" .
+					"<td id='two'><img src='http://localhost/projectShowmoor" . $rowObj->image_address . "'/></td>" .
 					"<td>" . $rowObj->publish_date . "</td>" .
 					"<td>" . $rowObj->username . "</td></tr>"
 				;
