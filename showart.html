@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<title>ShowArt</title>
+	<style>
+		table{border:2px solid blue;}
+		td{border:2px solid green;}
+		#one{width:10%;}
+		#two{width:90%;}
+		#two img{width:500px;height:200px;}
+		th{border:2px solid red;}
+		#pico{left:50%;position:absolute;
+			transform:translate(-50%,0%);background-color:#eee;}
+	</style>
+	<script src="lib/jquery-1.12.3.js"></script>
+	<script>
+		function loadImageTable() {
+			var posting = $.post("http:/temp1_18aug2017_1/showart.php");
+			// Put the results in a div
+			posting.done(function(data) {
+				$("#pico").html(data);
+			});
+		}
+	</script>
+</HEAD>
+<BODY>
+	<button id="shimatta" onclick="loadImageTable()">Click to Get Results</button>
+	<div id="pico"></div>
+</BODY>
+</HTML>

@@ -1,0 +1,46 @@
+It is called showmoor like showroom:
+here are the links which need treatments:
+and every link with the screenshot from macbook 15 so that you know how it does originally look like
+(until you make it responsive or I will)
+
+1 http://showmoor.com
+2 http://showmoor.com/showjob.html
+3 http://showmoor.com/showroom.html
+there are still few pages like upload, welcome page etc.
+But here are the most important 3 ones and before I send you an html I'm showing you it so that you analyze it
+first page is good : just maybe improve its code and make it faster
+second page is good : just maybe improve its code and make it faster and also make the search function you know what I mean:
+to search a job
+
+//--------------------------------------------
+hi back,
+so for all pages:
+they all must be improved and responsive at least for Pcs sizes, they are in HTML,
+no design must change but would be favourable  if you can improve the code behind,
+make the site fast and use HTML5.
+
+for the first and second pages
+for the functions:
+
+
+1. First page:
+- only a show page that must display (full screen) the first image of the profile images,
+- the name of the designer
+- the number of the creative room (down left)
+- the work of the designer,
+- the day it is published
+- the actual day (today) up right.
+
+2. Second page : it shows the date of today (up right), an artwork,
+the name of artist and a link to that page.
+And the main content is jobs.
+That appear with one filter (latest) with a search possibility on the left that allows users to search.
+The job link to the job poster agency or to a page depending on what the poster has chosen,
+and all the jobs are similar:
+job title,
+full/part time or freelancer,
+city of the job location,
+apply button,
+description and
+a non visible category unless a user search (I will give you a list of the creative fields you must put)
+.We will add a job posting page as well.
