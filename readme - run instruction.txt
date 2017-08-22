@@ -1,1 +1,1 @@
-http://localhost/temp1_18aug2017_1/A%20general%20connection.php
+http://localhost/temp1_18aug2017_1/file_name.php

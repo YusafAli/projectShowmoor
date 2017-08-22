@@ -31,23 +31,27 @@
   <![endif]-->
 	<!--custom head HTML-->
 	<script>
-		//Current Date to autoload the date
-		var currentDate = new Date();
-		var dateimg = document.getElementById("u242694");
-		dateimg.onload = function () {
-			console.info("Image has loaded");
-			console.info(currentDate.getDate()
-			+ "." + currentDate.getMonth()+1
-			+ "." + currentDate.getFullYears());
+		var PageDownloaded = false;
+		function setPageDownloadComplete() {
+			PageDownloaded = true;
+			setDate();
+			
 		}
-		dateimg.onerror = function () {
-			console.error("Cannot load image");
+		function setDate() {
+			var currentDate = new Date();
+			var formattedDate;
+			if ((currentDate.getMonth()+1) <= 10) {
+				formattedDate = currentDate.getDate() + ".0" +
+									(currentDate.getMonth()+1) + "." +
+									currentDate.getFullYear();
+			} else {
+				formattedDate = currentDate.getDate() + "." +
+									(currentDate.getMonth()+1) + "." +
+									currentDate.getFullYear();
+			}
+			document.getElementById('u242694').setAttribute('alt', formattedDate);
+			console.info("Date set to current " + formattedDate);
 		}
-		image.src = "/image/";
-		document.getElementById("u242694").setAttribute("alt","");
-		
-		
-		
 		//Google analytics code, not to be triffled with.
 		(function(i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
@@ -64,10 +68,13 @@
 		ga('create', 'UA-76318142-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-
+	<style>
+		div{border:5px dotted yellow;}
+		body{background-color:white;color:black;}
+	</style>
 </head>
 
-<body>
+<body onload="setPageDownloadComplete()">
 	<div class="breakpoint active" id="bp_infinity" data-min-width="1441">
 		<!-- responsive breakpoint node -->
 		<div class="clearfix" id="page">
@@ -105,8 +112,9 @@
 					<!-- /m_editable -->
 				</div>
 				<!-- The date part here todays date will be shown -->
-				<!-- <img class="pinned-colelem shared_content" id="u242694" alt="25.07.2017" src="images/blank.gif?crc=4208392903" data-content-guid="u242694_content" /> -->
-				<img id="u242694" alt="" src="blank"/>
+				<!--img class="pinned-colelem shared_content" id="u242694" alt="" src="images/blank.gif?crc=4208392903" data-content-guid="u242694_content"/-->
+				<img class="" id="u242694" alt="What r u accessing" src="images/blank.gif?crc=4208392903"/>
+				<!-- <img id="u242694" alt="" src="blank"/> -->
 				<!-- state-based BG images -->
 				<!-- m_editable region-id="editable-static-tag-U242725-BP_infinity" template="showart.html" data-type="image" -->
 				<div class="clip_frame pinned-colelem shared_content" id="u242725" data-muse-uid="U242725" data-muse-type="img_frame" data-content-guid="u242725_content">
@@ -128,7 +136,8 @@
 				<!-- m_editable region-id="editable-static-tag-U242703-BP_infinity" template="showart.html" data-type="image" -->
 				<div class="clip_frame pinned-colelem shared_content" id="u242703" data-muse-uid="U242703" data-muse-type="img_frame" data-content-guid="u242703_content">
 					<!-- image -->
-					<img class="block temp_no_img_src" id="u242703_img" data-orig-src="images/eingefuegtes%20bild%201264x1448.png?crc=444328761" alt="" width="196" height="225" data-muse-src="images/eingefuegtes%20bild%201264x1448.png?crc=444328761" src="images/blank.gif?crc=4208392903" />
+					<!-- <img class="block temp_no_img_src" id="u242703_img" data-orig-src="images/eingefuegtes%20bild%201264x1448.png?crc=444328761" alt="" width="196" height="225" src="images/blank.gif?crc=4208392903" /> -->
+					<img class="block temp_no_img_src" id="u242703_img" alt="" width="196" height="225" src="images/eingefuegtes%20bild%201264x1448.png?crc=444328761" />
 				</div>
 				<!-- /m_editable -->
 				<!-- m_editable region-id="editable-static-tag-U267145-BP_infinity" template="showart.html" data-type="image" -->
