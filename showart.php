@@ -7,7 +7,7 @@
 	// just checking the connection first
 	// arg0 = address, arg1 = username, arg2 = password
 	// this is general file, so we will just put the root user in this example
-	$con = mysqli_connect("localhost","root","roast");
+	$con = mysqli_connect("localhost","root","");
 	if (!$con) {
 		// If the connection was not established this block will happen
 		// Die gracefully by showing some kind of unable to connect msg
@@ -25,7 +25,7 @@
 					"<tr>" .
 					"<td id='one'>" . $rowObj->design_id . "</td>" .
 					// "<td id='two'>" . $rowObj->image_address . "</td></tr>"
-					"<td id='two'><img src='http://localhost/temp1_18aug2017_1" . $rowObj->image_address . "'/></td>" .
+					"<td id='two'><img src='http://localhost/showmorclone" . $rowObj->image_address . "'/></td>" .
 					"<td>" . $rowObj->publish_date . "</td>" .
 					"<td>" . $rowObj->username . "</td></tr>"
 				;

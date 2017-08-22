@@ -15,7 +15,8 @@
 	<script src="lib/jquery-1.12.3.js"></script>
 	<script>
 		function loadImageTable() {
-			var posting = $.post("http:/temp1_18aug2017_1/showart.php");
+//			var posting = $.post("http:/temp1_18aug2017_1/showart.php");
+			var posting = $.post("http:/showmorclone/showart.php");
 			// Put the results in a div
 			posting.done(function(data) {
 				$("#pico").html(data);
