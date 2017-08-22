@@ -7,7 +7,7 @@
 	// just checking the connection first
 	// arg0 = address, arg1 = username, arg2 = password
 	// this is general file, so we will just put the root user in this example
-	$con = mysqli_connect("localhost","root","roast");
+	$con = mysqli_connect("localhost","root","");
 	if (!$con) {
 		// If the connection was not established this block will happen
 		// Die gracefully by showing some kind of unable to connect msg
